@@ -1,0 +1,99 @@
+<app-navbar-coach></app-navbar-coach>
+<div class="main-content">
+    <div class="container-fluid">
+        <section class="content">
+            <div class="card">
+                <div class="card-header">
+        
+        <h2>Listes des exercices</h2>
+        <button  class="btn btn-success btn-sm " data-toggle="tooltip" data-placement="top"  style="float: right;" ><a style="color:#ffffff" href="/exercices#add">Ajouter exercice</a></button>
+
+        <br><br>
+
+
+       
+       
+<br>
+
+        <div id="content" #content class="panel-body">
+            <table class="table table-striped"  >
+                <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Image</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+                    </thead>
+                    <tr *ngFor="let i of exercices">
+                        <td>{{i.nom}} </td>
+                    
+                      <td> <img style="width:100px ;height:100 px;"
+                        [src]= "i.filename" 
+                        >  </td>
+                        <td>{{i.description}}</td>
+                        <td>
+                            <!--<button style='margin-right:16px' (click)="updateCustomer(i.id)" 
+                            class="btn btn-info" style="margin-left: 10px">Edit</button>-->
+                            
+                           
+                            <button style="margin-left: 20px; background-color: red; color: white; font-size: medium; border: solid red;"  data-toggle="tooltip" data-placement="top" title="Delete" (click)="deleteExercice(i)">supprimer</button>
+                           
+
+
+                        </td>
+                        
+                      
+                        
+                    </tr>
+                    </table>
+                    </div>
+                   
+
+                    
+
+
+         
+      
+                </div>
+            </div>
+            </section>
+            
+            
+                     
+                  
+                </div>
+            </div>
+            <br>
+            
+           
+                
+                   
+            <br>
+            <div id="add" > </div>
+
+            <div class="page-section">
+                <div class="container">
+                  <h1 class="text-center wow fadeInUp">creer un nouvel exercice</h1>
+            
+                  <form (ngSubmit) = "onSubmit()" class="contact-form mt-5">
+                    <div class="col-12 py-2 wow fadeInUp">
+                        <label>Type</label>
+                        <input type="text"  class="form-control" placeholder="Saisir le type de l'exercice"
+                        [(ngModel)]="exercice.nom" name="nom" >
+                    </div>
+                    <div class="col-12 py-2 wow fadeInUp">
+                        <label>Descriptions</label>
+                        <input type="text"  class="form-control" placeholder="Saisir l'image de l'exercice "
+                        [(ngModel)]="exercice.description" name="description" >
+                    </div>
+                    <div class="col-12 py-2 wow fadeInUp">
+                        <label>Descriptions</label>
+                         <input #fileInput type="file" class="form-control" >
+                    </div> 
+                        
+                    <button type="submit" class="btn btn-primary wow zoomIn">creer</button>
+                  </form>
+                </div>
+              </div>
+<app-footer></app-footer>
