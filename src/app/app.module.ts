@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
-
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +19,10 @@ import { NavbarCustomerComponent } from './customer/navbar-customer/navbar-custo
 import { FooterCustomerComponent } from './customer/footer-customer/footer-customer.component';
 import { ProfilComponent } from './customer/profil/profil.component';
 import { RendezVousComponent } from './customer/rendez-vous/rendez-vous.component';
+import { RegisterComponent } from './customer/register/register.component';
+import { NavbarCoachComponent } from './coach/navbar-coach/navbar-coach.component';
+
+import { ExerciceComponent } from './coach/exercice/exercice.component';
 
 @NgModule({
   declarations: [
@@ -35,13 +39,18 @@ import { RendezVousComponent } from './customer/rendez-vous/rendez-vous.componen
     NavbarCustomerComponent,
     FooterCustomerComponent,
     ProfilComponent,
-    RendezVousComponent
+    RendezVousComponent,
+    RegisterComponent,
+    NavbarCoachComponent,
+    ExerciceComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     Ng2SearchPipeModule,
+    FormsModule,
+    
     
   ],
   providers: [],

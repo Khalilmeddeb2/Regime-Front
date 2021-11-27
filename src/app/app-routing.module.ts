@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ExerciceComponent } from './coach/exercice/exercice.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { DoctorsComponent } from './components/doctors/doctors.component';
@@ -7,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { NewComponent } from './components/new/new.component';
 import { ProfilComponent } from './customer/profil/profil.component';
+import { RegisterComponent } from './customer/register/register.component';
 import { RendezVousComponent } from './customer/rendez-vous/rendez-vous.component';
 
 const routes: Routes = [
@@ -18,6 +20,9 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'profilClient', component: ProfilComponent },
   { path: 'RDvClient', component: RendezVousComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'profilCoach', component: ProfilComponent },
+  { path: 'exercices', component: ExerciceComponent },
   
 ];
 
