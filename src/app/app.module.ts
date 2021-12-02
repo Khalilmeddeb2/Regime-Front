@@ -31,6 +31,7 @@ import { DashbordComponent } from './admin/dashbord/dashbord.component';
 import { MedecinComponent } from './admin/medecin/medecin.component';
 import { CoachComponent } from './admin/coach/coach.component';
 import { PatientComponent } from './admin/patient/patient.component';
+import { ProfilCoachComponent } from './coach/profil-coach/profil-coach.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { PatientComponent } from './admin/patient/patient.component';
     MedecinComponent,
     CoachComponent,
     PatientComponent,
+    ProfilCoachComponent,
   ],
   imports: [
     BrowserModule,

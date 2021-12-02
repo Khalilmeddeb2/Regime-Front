@@ -7,6 +7,7 @@ import { MedecinComponent } from './admin/medecin/medecin.component';
 import { PatientComponent } from './admin/patient/patient.component';
 import { SidebarComponent } from './admin/sidebar/sidebar.component';
 import { ExerciceComponent } from './coach/exercice/exercice.component';
+import { ProfilCoachComponent } from './coach/profil-coach/profil-coach.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { DoctorsComponent } from './components/doctors/doctors.component';
@@ -29,7 +30,7 @@ const routes: Routes = [
   { path: 'profilClient', component: ProfilComponent },
   { path: 'RDvClient', component: RendezVousComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'profilCoach', component: ProfilComponent },
+  { path: 'profilCoach', component: ProfilCoachComponent },
   { path: 'exercices', component: ExerciceComponent },
   { path : 'medecinHome', component : MedecinHomeComponent},
   { path: 'sidebar', component: SidebarComponent },
