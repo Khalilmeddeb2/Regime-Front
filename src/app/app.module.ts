@@ -26,6 +26,7 @@ import { ExerciceComponent } from './coach/exercice/exercice.component';
 import { AdminHomeComponent } from './admin/admin-home/admin-home.component';
 import { ListeMedecinComponent } from './admin/liste-medecin/liste-medecin.component';
 import { TokenInterceptorService } from './services/token-interceptor.service';
+import { MedecinHomeComponent } from './medecin/medecin-home/medecin-home.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { TokenInterceptorService } from './services/token-interceptor.service';
     NavbarCoachComponent,
     ExerciceComponent,
     AdminHomeComponent,
-    ListeMedecinComponent
+    ListeMedecinComponent,
+    MedecinHomeComponent
   ],
   imports: [
     BrowserModule,

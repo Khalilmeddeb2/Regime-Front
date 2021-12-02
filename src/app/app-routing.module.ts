@@ -12,6 +12,7 @@ import { NewComponent } from './components/new/new.component';
 import { ProfilComponent } from './customer/profil/profil.component';
 import { RegisterComponent } from './customer/register/register.component';
 import { RendezVousComponent } from './customer/rendez-vous/rendez-vous.component';
+import { MedecinHomeComponent } from './medecin/medecin-home/medecin-home.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,7 +27,8 @@ const routes: Routes = [
   { path: 'profilCoach', component: ProfilComponent },
   { path: 'exercices', component: ExerciceComponent },
   {path : 'adminHome', component : AdminHomeComponent},
-  {path : 'listeMedecin', component : ListeMedecinComponent}
+  {path : 'listeMedecin', component : ListeMedecinComponent},
+  { path : 'medecinHome', component : MedecinHomeComponent}
   
 ];
 

@@ -66,6 +66,10 @@ export class LoginComponent implements OnInit {
     {
       this.router.navigate(['/profilCoach'])
     }
+    if(this.userlog.role == "medecin")
+    {
+      this.router.navigate(['/medecinHome'])
+    }
     })
 
     async function setitem(data) {
