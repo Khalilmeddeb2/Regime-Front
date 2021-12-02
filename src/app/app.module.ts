@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
 
@@ -23,6 +23,9 @@ import { RegisterComponent } from './customer/register/register.component';
 import { NavbarCoachComponent } from './coach/navbar-coach/navbar-coach.component';
 
 import { ExerciceComponent } from './coach/exercice/exercice.component';
+import { AdminHomeComponent } from './admin/admin-home/admin-home.component';
+import { ListeMedecinComponent } from './admin/liste-medecin/liste-medecin.component';
+import { TokenInterceptorService } from './services/token-interceptor.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,9 @@ import { ExerciceComponent } from './coach/exercice/exercice.component';
     RendezVousComponent,
     RegisterComponent,
     NavbarCoachComponent,
-    ExerciceComponent
+    ExerciceComponent,
+    AdminHomeComponent,
+    ListeMedecinComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +58,11 @@ import { ExerciceComponent } from './coach/exercice/exercice.component';
     
     
   ],
-  providers: [],
+  providers: [{
+    provide : HTTP_INTERCEPTORS,
+    useClass : TokenInterceptorService,
+    multi : true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

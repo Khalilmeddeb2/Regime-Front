@@ -22,10 +22,10 @@
       <br>
       <!-- Login Form -->
       <form >
-        <input type="text"  class="fadeIn second" name="login" placeholder="saisir votre identifaint"  >
+        <input [(ngModel)] = "loginUserData.login" type="text"  class="fadeIn second" name="login" placeholder="saisir votre identifaint"  >
         <br>
         <br>
-        <input type="password"  class="fadeIn third" name="password" placeholder="saisir vote mot de passe" >
+        <input [(ngModel)] = "loginUserData.password" type="password"  class="fadeIn third" name="password" placeholder="saisir vote mot de passe" >
         <br>
         <br>
         <br>
