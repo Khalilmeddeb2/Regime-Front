@@ -23,4 +23,15 @@ export class UserServiceService {
 
     return this.http.get(`${this._userUrl}/medecins`);
 }
+
+getAllPatients() :Observable <any> {
+    
+
+  return this.http.get(`${this._userUrl}/patients`);
+}
+
+public deleteUser(id : string):Observable<Object>
+      {
+        return this.http.delete(`${this._userUrl}/${id}`);
+      }  
 }

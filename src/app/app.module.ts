@@ -23,6 +23,12 @@ import { RegisterComponent } from './customer/register/register.component';
 import { NavbarCoachComponent } from './coach/navbar-coach/navbar-coach.component';
 
 import { ExerciceComponent } from './coach/exercice/exercice.component';
+import { SidebarComponent } from './admin/sidebar/sidebar.component';
+import { ContactMarketingComponent } from './admin/contact-marketing/contact-marketing.component';
+import { DashbordComponent } from './admin/dashbord/dashbord.component';
+import { MedecinComponent } from './admin/medecin/medecin.component';
+import { CoachComponent } from './admin/coach/coach.component';
+import { PatientComponent } from './admin/patient/patient.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +48,13 @@ import { ExerciceComponent } from './coach/exercice/exercice.component';
     RendezVousComponent,
     RegisterComponent,
     NavbarCoachComponent,
-    ExerciceComponent
+    ExerciceComponent,
+    SidebarComponent,
+    ContactMarketingComponent,
+    DashbordComponent,
+    MedecinComponent,
+    CoachComponent,
+    PatientComponent
   ],
   imports: [
     BrowserModule,
