@@ -23,8 +23,6 @@ import { RegisterComponent } from './customer/register/register.component';
 import { NavbarCoachComponent } from './coach/navbar-coach/navbar-coach.component';
 
 import { ExerciceComponent } from './coach/exercice/exercice.component';
-import { AdminHomeComponent } from './admin/admin-home/admin-home.component';
-import { ListeMedecinComponent } from './admin/liste-medecin/liste-medecin.component';
 import { TokenInterceptorService } from './services/token-interceptor.service';
 import { MedecinHomeComponent } from './medecin/medecin-home/medecin-home.component';
 
@@ -47,8 +45,6 @@ import { MedecinHomeComponent } from './medecin/medecin-home/medecin-home.compon
     RegisterComponent,
     NavbarCoachComponent,
     ExerciceComponent,
-    AdminHomeComponent,
-    ListeMedecinComponent,
     MedecinHomeComponent
   ],
   imports: [
