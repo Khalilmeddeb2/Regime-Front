@@ -1,0 +1,77 @@
+<app-sidebar></app-sidebar>
+
+  
+    
+        
+        
+            <h4  style="color: #808080;">Contacts</h4>
+            <div class="container-fluid">
+                
+                <section class="content">
+                    <div class="card">
+                        <div class="card-header">
+                           
+                <h4>Listes des contacts</h4>
+        
+        
+                 <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+               
+        
+        
+                <div  class="panel-body">
+                    <table id="tableCustomer" class="table table-striped"  cellspacing="0" width="100%">
+                        <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Email</th>
+                           
+                            
+                            <th>Sujet</th>
+                            <th>Messages</th>
+                           
+                            <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tr *ngFor="let i of contacts">
+                                <td>{{i.name}} </td>
+                                <td>{{i.email}} </td>
+                                
+                                <td>{{i.subject}} </td>
+                                <td>{{i.message}}</td>
+                               
+                                <td>
+                                  
+                                    
+                                   
+                                    <button style="margin-left: 20px; background-color: red; color: white; font-size: medium; border: solid red;margin-left: 30%;"  data-toggle="tooltip" data-placement="top" title="Delete" (click)="deleteContact(i)">supprimer</button>
+
+        
+                                </td>
+                            
+                            </tr>
+                            </table>
+                            </div>
+                           
+        
+                            
+        
+        
+                 
+              
+                        </div>
+                    </div>
+                    </section>
+                    
+                    
+                             
+                          
+                        </div>
+                   
+<!-- /#page-content-wrapper -->
+<!-- /#pag -->
+

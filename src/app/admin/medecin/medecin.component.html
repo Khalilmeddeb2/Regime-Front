@@ -1,0 +1,77 @@
+<app-sidebar></app-sidebar>
+
+  
+    
+        
+        
+            <h4  style="color: #808080;">Contacts</h4>
+            <div class="container-fluid">
+                
+                <section class="content">
+                    <div class="card">
+                        <div class="card-header">
+                           
+                <h4>Listes des Medecins</h4>
+        
+        
+                 <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+               
+        
+        
+                <div  class="panel-body">
+                    <table id="tableCustomer" class="table table-striped"  cellspacing="0" width="100%">
+                        <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>DateNaissance</th>
+                            <th>Email</th>
+                             <th>Role</th>
+                              <th>Adresse</th>
+                            <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tr *ngFor="let i of medecins">
+                                <td>{{i.firstName}} </td>
+                                <td>{{i.lastName}} </td>
+                                <td>{{i.DateNaissance}} </td>
+                                <td>{{i.e_mail}} </td>
+                                <td>{{i.role}} </td>
+                                <td>{{i.adresse}}</td>
+                               
+                                
+                                <td>
+                                  
+                                    
+                                   
+                                    <button style="margin-left: 20px; background-color: red; color: white; font-size: medium; border: solid red;margin-left: 30%;"  data-toggle="tooltip" data-placement="top" title="Delete" (click)="deleteMedecin(i)">supprimer</button>
+
+        
+                                </td>
+                            
+                            </tr>
+                            </table>
+                            </div>
+                           
+        
+                            
+        
+        
+                 
+              
+                        </div>
+                    </div>
+                    </section>
+                    
+                    
+                             
+                          
+                        </div>
+                   
+<!-- /#page-content-wrapper -->
+<!-- /#pag -->

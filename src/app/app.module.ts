@@ -25,6 +25,12 @@ import { NavbarCoachComponent } from './coach/navbar-coach/navbar-coach.componen
 import { ExerciceComponent } from './coach/exercice/exercice.component';
 import { TokenInterceptorService } from './services/token-interceptor.service';
 import { MedecinHomeComponent } from './medecin/medecin-home/medecin-home.component';
+import { SidebarComponent } from './admin/sidebar/sidebar.component';
+import { ContactMarketingComponent } from './admin/contact-marketing/contact-marketing.component';
+import { DashbordComponent } from './admin/dashbord/dashbord.component';
+import { MedecinComponent } from './admin/medecin/medecin.component';
+import { CoachComponent } from './admin/coach/coach.component';
+import { PatientComponent } from './admin/patient/patient.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +52,12 @@ import { MedecinHomeComponent } from './medecin/medecin-home/medecin-home.compon
     NavbarCoachComponent,
     ExerciceComponent,
     MedecinHomeComponent
+    SidebarComponent,
+    ContactMarketingComponent,
+    DashbordComponent,
+    MedecinComponent,
+    CoachComponent,
+    PatientComponent
   ],
   imports: [
     BrowserModule,
