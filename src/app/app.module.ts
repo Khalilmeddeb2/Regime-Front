@@ -51,13 +51,13 @@ import { PatientComponent } from './admin/patient/patient.component';
     RegisterComponent,
     NavbarCoachComponent,
     ExerciceComponent,
-    MedecinHomeComponent
+    MedecinHomeComponent,
     SidebarComponent,
     ContactMarketingComponent,
     DashbordComponent,
     MedecinComponent,
     CoachComponent,
-    PatientComponent
+    PatientComponent,
   ],
   imports: [
     BrowserModule,

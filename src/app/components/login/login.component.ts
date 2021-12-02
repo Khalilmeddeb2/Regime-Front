@@ -56,7 +56,7 @@ export class LoginComponent implements OnInit {
       setitem(data)
       if(this.userlog.role == "admin")
     {
-      this.router.navigate(['/adminHome'])
+      this.router.navigate(['/admin-dashbord'])
     }
       if(this.userlog.role == "patient")
     {
