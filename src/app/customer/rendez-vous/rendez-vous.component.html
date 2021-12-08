@@ -5,25 +5,6 @@
 
       <form (ngSubmit) = "onSubmit()" class="main-form">
         <div class="row mt-5 ">
-          
-          
-         
-         
-          <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
-            <input type="text" class="form-control" placeholder="saissir votre nom et prenom"
-            [(ngModel)]="rdv.nomPatient" name="nomPatient">
-          </div>
-
-          <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
-            <input type="email" class="form-control" placeholder="saissir votre email"
-            [(ngModel)]="rdv.emailPatient" name="emailPatient">
-          </div>
-
-          <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
-            <textarea name="message"  class="form-control" rows="6" placeholder="saisir vos problemes"
-              [(ngModel)]="rdv.note" name="note">
-            </textarea>
-          </div>
 
           <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
             <label style="color: #00D9A5;">choisir votre medecin :</label>
@@ -31,13 +12,21 @@
 
 
           <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms" >
-            <select class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms"   [(ngModel)]="rdv.medecin.id"  name="medecin">
-              <option *ngFor="let i of medecins"  [value]="i.id" >{{i.firstName}}</option>
+            <select class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms"   [(ngModel)]="rdv.medecin._id"  name="medecin">
+              <option *ngFor="let i of medecins"  [value]="i._id" >{{i.firstName}} {{i.lastName}}</option>
           </select>
           </div>
         </div>
 
-        <button type="submit" class="btn btn-primary mt-3 wow zoomIn">Contacter</button>
+
+
+        <div>
+          <label style="color: #00D9A5;">Saisir la date de RDV :</label>
+        </div>
+        <input type="date" class="form-control" min="{{d1}}" placeholder="saisir date RDV"
+        [(ngModel)]="rdv.date" name="DateNaissance" >
+
+        <button type="submit" class="btn btn-primary mt-3 wow zoomIn">Passer RDV</button>
       </form>
     </div> <!-- .container -->
   </div> <!-- .page-section -->

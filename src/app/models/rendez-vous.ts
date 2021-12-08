@@ -3,11 +3,8 @@ import { User } from "./user";
 export class RendezVous {
 
     date!: Date;
-    note!: string; 
+    note!: string;
     valid! : Boolean ;
-    // zedthom ena les attribus hedhoum
-
-    nomPatient! :String ;
-    emailPatient! :String ;
-    medecin!:User;
+    patient! : User;
+    medecin! : User;
 }

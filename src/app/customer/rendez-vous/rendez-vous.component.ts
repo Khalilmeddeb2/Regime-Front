@@ -14,12 +14,21 @@ import { UserServiceService } from 'src/app/services/user-service.service';
 export class RendezVousComponent implements OnInit {
   rdv :RendezVous=new RendezVous();
   medecins : any;
+  dateAuj = new Date();
+  d : string;
+  d1 : string;
+  //patient : User = new User();
   constructor(private rdvService :RdvService,private userSevice :UserServiceService,private router :Router) { 
     this.rdv.medecin= new User();
+    this.rdv.patient = new User();
+    
   }
 
   ngOnInit(): void {
     this.getMedecins();
+    this.d=this.dateAuj.toISOString();
+    this.d1= (this.dateAuj.toISOString()).substr(0, 10);
+    console.log(this.d1)
   }
 
   getMedecins(){
@@ -38,9 +47,12 @@ export class RendezVousComponent implements OnInit {
   saveRdv(){
    
      this.rdvService.createPatient(this.rdv).subscribe(data=>{
+      console.log('le rdv est : ');
        console.log(data);
-       this.rdv=new RendezVous();
-       this.router.navigate(['/RDvClient'])
+       //this.rdv=new RendezVous();
+       this.router.navigate(['/profilClient'])
+      
+       //console.log(this.rdv);
        
  
    },
@@ -49,7 +61,8 @@ export class RendezVousComponent implements OnInit {
  }
 
  onSubmit(){
-  console.log(this.rdv);
+  this.rdv.medecin.id = this.rdv.medecin._id;
+ // console.log(this.rdv);
   this.saveRdv();
 }
   
