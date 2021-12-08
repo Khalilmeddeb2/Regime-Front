@@ -5,7 +5,7 @@ export class User {
     id  : string | undefined;
     firstName : string | undefined;
     lastName : string | undefined;
-    DateNaissance : Date | undefined;
+    dateNaissance : Date | undefined;
     e_mail : string | undefined;
     login : string | undefined ;
     password : string | undefined;
