@@ -15,7 +15,7 @@ export class RendezVousComponent implements OnInit {
   rdv :RendezVous=new RendezVous();
   medecins : any;
   dateAuj = new Date();
-  d : string;
+  d : string; 
   d1 : string;
   //patient : User = new User();
   constructor(private rdvService :RdvService,private userSevice :UserServiceService,private router :Router) { 
@@ -67,3 +67,4 @@ export class RendezVousComponent implements OnInit {
 }
   
 }
+

@@ -2,7 +2,7 @@ export class User {
 
    
     _id! : string ;
-    id  : string | undefined;
+    id ! : string ;
     firstName : string | undefined;
     lastName : string | undefined;
     dateNaissance : Date | undefined;

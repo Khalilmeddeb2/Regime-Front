@@ -1,0 +1,53 @@
+<app-navbar-coach></app-navbar-coach>
+<div class="main-content">
+    <div class="container-fluid">
+        <section class="content">
+            <div class="card">
+                <div class="card-header">
+        
+        <h2>Listes des Patients</h2>
+
+        <br><br>
+
+        <div id="content" #content class="panel-body">
+            <table class="table table-striped"  >
+                <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prenom</th>
+                    <th>Email</th>
+                   
+                </tr>
+                    </thead>
+                    <tr *ngFor="let i of patients">
+                        <td>{{i.firstName}} </td>
+                        <td>{{i.lastName}}</td>
+                        <td>{{i.e_mail}} </td>
+                        
+                      
+                        
+                    </tr>
+                    </table>
+                    </div>
+                   
+
+                    
+
+
+         
+      
+                </div>
+            </div>
+            </section>
+            
+            
+                     
+                  
+                </div>
+            </div>
+            <br>
+            <br>
+
+
+
+<app-footer></app-footer>

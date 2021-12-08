@@ -37,6 +37,12 @@ import { FooterMedecinComponent } from './medecin/footer-medecin/footer-medecin.
 import { ValidRdvComponent } from './medecin/valid-rdv/valid-rdv.component';
 import { NonValidRdvComponent } from './medecin/non-valid-rdv/non-valid-rdv.component';
 import { ConfirmRdvComponent } from './medecin/confirm-rdv/confirm-rdv.component';
+import { AjoutCoachComponent } from './admin/ajout-coach/ajout-coach.component';
+import { AjoutMedecinComponent } from './admin/ajout-medecin/ajout-medecin.component';
+import { PatientsComponent } from './coach/patients/patients.component';
+import { DemandeCoachComponent } from './customer/demande-coach/demande-coach.component';
+import { ActiviteComponent } from './coach/activite/activite.component';
+import { AjoutActiviteComponent } from './coach/ajout-activite/ajout-activite.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +76,12 @@ import { ConfirmRdvComponent } from './medecin/confirm-rdv/confirm-rdv.component
     ValidRdvComponent,
     NonValidRdvComponent,
     ConfirmRdvComponent,
+    AjoutCoachComponent,
+    AjoutMedecinComponent,
+    PatientsComponent,
+    DemandeCoachComponent,
+    ActiviteComponent,
+    AjoutActiviteComponent,
   ],
   imports: [
     BrowserModule,

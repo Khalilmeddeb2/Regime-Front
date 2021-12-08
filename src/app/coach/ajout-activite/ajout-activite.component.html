@@ -1,0 +1,47 @@
+
+<app-navbar-customer></app-navbar-customer>
+<div class="page-section">
+    <div class="container">
+      <h1 class="text-center wow fadeInUp">Demande un coach</h1>
+
+      <form (ngSubmit) = "onSubmit()" class="main-form">
+        <div class="row mt-5 ">
+          
+          
+         
+         
+          
+
+         
+
+         
+
+          <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
+            <label style="color: #00D9A5;">choisir votre patient :</label>
+          </div>
+
+
+          <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms" >
+            <select class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms"   [(ngModel)]="patId"  name="patient">
+              <option *ngFor="let i of patients"  [value]="i._id"  >{{i.firstName}}</option>
+          </select>
+          </div>
+
+          <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
+            <label style="color: #00D9A5;">choisir votre exercices :</label>
+          </div>
+
+
+          <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms" >
+            <select class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms"   [(ngModel)]="exeId"  name="exercices">
+              <option *ngFor="let i of exercices"  [value]="i._id"  >{{i.nom}}</option>
+          </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3 wow zoomIn">Contacter</button>
+      </form>
+    </div> <!-- .container -->
+  </div> <!-- .page-section -->
+ 
+<app-footer-customer></app-footer-customer>

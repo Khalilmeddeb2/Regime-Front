@@ -1,44 +1,43 @@
+<app-sidebar></app-sidebar>
 
-   
-   <br>
    <br>
    
    <div  class="wrapper fadeInDown " >
        <div id="formContent">
          <!-- Tabs Titles -->
-         <h2 class="active"> S'inscrire </h2>
+         <h2 class="active"> Ajouter un nouvel medecin </h2>
          
-         <h6 class="active"> C’est rapide et facile. </h6>
+        
            
       <!-- Contact Form -->
     
         <form (ngSubmit) = "onSubmit()" name="Form" class="form" method="post">
           
                 <input type="text" class="form-control"  placeholder="saisir votre nom"
-                [(ngModel)]="patient.firstName" name="firstName" >
+                [(ngModel)]="medecin.firstName" name="firstName" >
                
              
               
                 <input type="text" class="form-control"  placeholder="saisir votre prenom"
-                [(ngModel)]="patient.lastName" name="lastName" >
+                [(ngModel)]="medecin.lastName" name="lastName" >
 
                 <div>
                   <label style="color: #00D9A5;">Saisir votre date de naisance :</label>
                 </div>
                 <input type="date" class="form-control"  placeholder="saisir votre prenom"
-                [(ngModel)]="patient.dateNaissance" name="DateNaissance" >
+                [(ngModel)]="medecin.dateNaissance" name="DateNaissance" >
 
 
                 <input type="email" class="form-control"  placeholder="saisir votre email"
-                [(ngModel)]="patient.e_mail" name="e_mail" >
+                [(ngModel)]="medecin.e_mail" name="e_mail" >
 
 
                 <input type="text" class="form-control"  placeholder="saisir votre login"
-                [(ngModel)]="patient.login" name="login" >
+                [(ngModel)]="medecin.login" name="login" >
 
 
                 <input type="password" class="form-control"  placeholder="saisir votre mot de passe"
-                [(ngModel)]="patient.password" name="password" >
+                [(ngModel)]="medecin.password" name="password" >
              
                
                 <br>

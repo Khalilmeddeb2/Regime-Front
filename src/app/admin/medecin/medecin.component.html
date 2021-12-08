@@ -19,7 +19,8 @@
                 <br>
                 <br>
                 <br>
-                
+                <button  class="btn btn-success btn-sm " data-toggle="tooltip" data-placement="top"  style="float: right;" ><a style="color:#ffffff"  routerLink="/admin-ajoutMedecin">Ajouter Medecin</a></button>
+                <br><br>
                
         
         
@@ -39,7 +40,7 @@
                             <tr *ngFor="let i of medecins">
                                 <td>{{i.firstName}} </td>
                                 <td>{{i.lastName}} </td>
-                                <td>{{i.dateNaissance}} </td>
+                                <td>{{i.dateNaissance | date:'yyyy-MM-dd'}} </td>
                                 <td>{{i.e_mail}} </td>
                                 <td>{{i.role}} </td>
                                 <td>{{i.adresse}}</td>
