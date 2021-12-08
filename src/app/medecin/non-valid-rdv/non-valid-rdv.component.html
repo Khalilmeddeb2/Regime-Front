@@ -1,0 +1,57 @@
+<app-navbar-medecin></app-navbar-medecin>
+
+
+<br>
+<br>  
+<br>
+<br>  
+<br>
+<br>
+<div class="container-fluid">
+    <h4>Listes des rendez-vous qui sont validés :  </h4>
+    <br>
+
+    <section class="content">
+        <div class="card">
+            <div class="card-header">
+            <div  class="panel-body">
+                <table id="tableNonValidRdv" class="table table-striped"  cellspacing="0" width="100%">
+                    <thead >
+                        <tr>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Email</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tr *ngFor="let i of NonValidRdv">
+                        <td>{{ i.patient.firstName }} </td>
+                        <td>{{ i.patient.lastName }} </td>
+                        <td>{{ i.patient.e_mail }} </td> 
+                        <td>{{ i.date }}</td>    
+                        <td>
+                            <button type="button" class="btn btn-secondary" (click)="confirmRdv(i._id)" title="Confirm">Confimer</button>
+                        </td>                   
+                    </tr>
+                </table>
+            </div>
+            </div>
+        </div>
+    </section>
+</div>
+                    
+
+<br>
+<br>  
+<br>
+<br>
+<br>
+<br>
+
+ 
+
+       
+    
+
+<app-footer-medecin></app-footer-medecin>

@@ -32,6 +32,11 @@ import { MedecinComponent } from './admin/medecin/medecin.component';
 import { CoachComponent } from './admin/coach/coach.component';
 import { PatientComponent } from './admin/patient/patient.component';
 import { ProfilCoachComponent } from './coach/profil-coach/profil-coach.component';
+import { NavbarMedecinComponent } from './medecin/navbar-medecin/navbar-medecin.component';
+import { FooterMedecinComponent } from './medecin/footer-medecin/footer-medecin.component';
+import { ValidRdvComponent } from './medecin/valid-rdv/valid-rdv.component';
+import { NonValidRdvComponent } from './medecin/non-valid-rdv/non-valid-rdv.component';
+import { ConfirmRdvComponent } from './medecin/confirm-rdv/confirm-rdv.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +65,11 @@ import { ProfilCoachComponent } from './coach/profil-coach/profil-coach.componen
     CoachComponent,
     PatientComponent,
     ProfilCoachComponent,
+    NavbarMedecinComponent,
+    FooterMedecinComponent,
+    ValidRdvComponent,
+    NonValidRdvComponent,
+    ConfirmRdvComponent,
   ],
   imports: [
     BrowserModule,

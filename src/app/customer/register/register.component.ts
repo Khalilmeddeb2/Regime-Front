@@ -21,7 +21,7 @@ export class RegisterComponent implements OnInit {
   savePatient(){
 
     if(this.patient.firstName=="" ||this.patient.firstName==undefined || this.patient.lastName=="" ||this.patient.lastName==undefined
-      ||this.patient.DateNaissance==undefined || this.patient.e_mail=="" ||this.patient.e_mail==undefined
+      ||this.patient.dateNaissance==undefined || this.patient.e_mail=="" ||this.patient.e_mail==undefined
       ||this.patient.login=="" ||this.patient.login==undefined || this.patient.password=="" ||this.patient.password==undefined
      )
     {
