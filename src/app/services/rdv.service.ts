@@ -9,7 +9,7 @@ const headers= new HttpHeaders()
   providedIn: 'root'
 })
 export class RdvService {
-  private _rdvUrl="http://localhost:5000/api/rdvs"
+  private _rdvUrl="http://localhost:5000/api/rdv"
   
   constructor(private http: HttpClient) { }
 

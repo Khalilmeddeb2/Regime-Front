@@ -22,7 +22,8 @@
                 
                
         
-        
+                <button  class="btn btn-success btn-sm " data-toggle="tooltip" data-placement="top"  style="float: right;" ><a style="color:#ffffff"  routerLink="/admin-ajoutCoach">Ajouter Coach</a></button>
+                 <br><br>
                 <div  class="panel-body">
                     <table id="tableCustomer" class="table table-striped"  cellspacing="0" width="100%">
                         <thead>
@@ -32,14 +33,14 @@
                             <th>DateNaissance</th>
                             <th>Email</th>
                              <th>Role</th>
-                              <th>Adresse</th>
+                            <th>Adresse</th>
                             <th>Actions</th>
                             </tr>
                             </thead>
                             <tr *ngFor="let i of coachs">
                                 <td>{{i.firstName}} </td>
                                 <td>{{i.lastName}} </td>
-                                <td>{{i.DateNaissance}} </td>
+                                <td>{{i.dateNaissance  | date:'yyyy-MM-dd' }} </td>
                                 <td>{{i.e_mail}} </td>
                                 <td>{{i.role}} </td>
                                 <td>{{i.adresse}}</td>

@@ -1,0 +1,53 @@
+<app-navbar-coach></app-navbar-coach>
+<div class="main-content">
+    <div class="container-fluid">
+        <section class="content">
+            <div class="card">
+                <div class="card-header">
+        
+        <h2>Listes des Activites</h2>
+
+        <br><br>
+
+        <div id="content" #content class="panel-body">
+            <table class="table table-striped"  >
+                <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Patient</th>
+                    <th>Exercice</th>
+                   
+                </tr>
+                    </thead>
+                    <tr *ngFor="let i of activites">
+                        <td>{{i.description}} </td>
+                        <td>{{i.patient.lastName}}</td>
+                        <td>{{i.exercices.nom}} </td>
+                        
+                      
+                        
+                    </tr>
+                    </table>
+                    </div>
+                   
+
+                    
+
+
+         
+      
+                </div>
+            </div>
+            </section>
+            
+            
+                     
+                  
+                </div>
+            </div>
+            <br>
+            <br>
+
+
+
+<app-footer></app-footer>

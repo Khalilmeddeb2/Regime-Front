@@ -2,10 +2,10 @@ export class User {
 
    
     _id! : string ;
-    id  : string | undefined;
+    id ! : string ;
     firstName : string | undefined;
     lastName : string | undefined;
-    DateNaissance : Date | undefined;
+    dateNaissance : Date | undefined;
     e_mail : string | undefined;
     login : string | undefined ;
     password : string | undefined;

@@ -9,34 +9,53 @@
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <h4 class="text-right">Profile Settings</h4>
                 </div>
-                <div class="row mt-2">
-                    <div class="col-md-6"><label class="labels">Name</label><input type="text" class="form-control" placeholder="first name" value=""></div>
-                    <div class="col-md-6"><label class="labels">Surname</label><input type="text" class="form-control" value="" placeholder="surname"></div>
+            
+                <div class="row mt-12">
+                    <div class="col-md-12"><label class="labels">votre nom est :</label><h6>{{patient.lastName}}</h6></div>
+                    <p class="po">aaaa</p>
+                    <div class="col-md-12"><label class="labels">votre prenom est :</label><h6>{{patient.lastName}}</h6></div>
+                    <p class="po">aaaa</p>
+                    <div class="col-md-12"><label class="labels">votre date de naissance :</label><h6>{{patient.dateNaissance}}</h6></div>
+                    <p class="po">aaaa</p>
+                    <div class="col-md-12"><label class="labels">votre adresse email</label><h6>{{patient.e_mail}}</h6></div>
+                    <p class="po">aaaa</p>
+                    <div class="col-md-12"><label class="labels">votre ville</label><h6>{{patient.adresse}}</h6></div>
+                    <p class="po">aaaa</p>
+                    <div class="col-md-12"><label class="labels">Mobile poid</label><h6>{{patient.poid}}</h6></div>
+                    <p class="po">aaaa</p>
+                    <div class="col-md-12"><label class="labels">Mobile taille</label><h6>{{patient.taille}}</h6></div>
+                    <p class="po">aaaa</p>
+                    <div class="col-md-12"><label class="labels">Mobile masse corporelle</label><h6>{{patient.imc}}</h6></div>
+                    <p class="po">aaaa</p>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-md-12"><label class="labels">Mobile Number</label><input type="text" class="form-control" placeholder="enter phone number" value=""></div>
-                    <div class="col-md-12"><label class="labels">Address Line 1</label><input type="text" class="form-control" placeholder="enter address line 1" value=""></div>
-                    <div class="col-md-12"><label class="labels">Address Line 2</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
-                    <div class="col-md-12"><label class="labels">Postcode</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
-                    <div class="col-md-12"><label class="labels">State</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
-                    <div class="col-md-12"><label class="labels">Area</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
-                    <div class="col-md-12"><label class="labels">Email ID</label><input type="text" class="form-control" placeholder="enter email id" value=""></div>
-                    <div class="col-md-12"><label class="labels">Education</label><input type="text" class="form-control" placeholder="education" value=""></div>
+                    <form (ngSubmit) = "updatePoidaille()" >
+                    <div class="col-md-12">
+                        <label class="labels">taille</label>
+                        <input type="text" class="form-control" placeholder="taille" [(ngModel)]="p.taille" name="taille" >
+                    </div>
+                    <div class="col-md-12">
+                        <label class="labels"> poids</label>
+                        <input type="text" class="form-control" value="" placeholder="poids" [(ngModel)]="p.poid" name="poid">
+                    </div>
+                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="submit">Save Profile</button></div>
+                    </form>
                 </div>
-                <div class="row mt-3">
-                    <div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="country" value=""></div>
-                    <div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" value="" placeholder="state"></div>
-                </div>
-                <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
+                
             </div>
         </div>
         <div class="col-md-4">
             <div class="p-3 py-5">
-                <div class="d-flex justify-content-between align-items-center experience"><span>Edit Experience</span><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i>&nbsp;Experience</span></div><br>
-                <div class="col-md-12"><label class="labels">Experience in Designing</label><input type="text" class="form-control" placeholder="experience" value=""></div> <br>
-                <div class="col-md-12"><label class="labels">Additional Details</label><input type="text" class="form-control" placeholder="additional details" value=""></div>
+                <div class="d-flex justify-content-between align-items-center experience"><span>Indice Masse Corporelle</span><button (click)="getImc()" class="btn btn-primary profile-button" type="submit">IMC</button></div><br>
+                <div class="col-md-12"><label class="labels">Votre IMC est :</label>{{patient.imc}}</div> <br>
+            </div>
+            <div class="p-3 py-5">
+                <div class="col-md-12"><label class="labels">Votre Etat est :</label>{{msg}}</div> <br>
             </div>
         </div>
+        <div *ngIf="show" class="alert alert-secondary" role="alert">
+            This is a secondary alert—check it out!
+          </div>
     </div>
 </div>
 

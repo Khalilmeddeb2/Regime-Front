@@ -60,7 +60,7 @@ export class LoginComponent implements OnInit {
     }
       if(this.userlog.role == "patient")
     {
-      this.router.navigate(['/profilClient'])
+      this.router.navigate(['/coach-patients'])
     }
     if(this.userlog.role == "coach")
     {

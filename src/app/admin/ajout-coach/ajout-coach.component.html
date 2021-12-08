@@ -1,0 +1,58 @@
+
+   <app-sidebar></app-sidebar>
+
+   <br>
+   
+   
+   <div  class="wrapper fadeInDown " >
+       <div id="formContent">
+         <!-- Tabs Titles -->
+         <h2 class="active"> Ajouter un nouvel coach </h2>
+         
+        
+           
+      <!-- Contact Form -->
+    
+        <form (ngSubmit) = "onSubmit()" name="Form" class="form" method="post">
+          
+                <input type="text" class="form-control"  placeholder="saisir votre nom"
+                [(ngModel)]="coach.firstName" name="firstName" >
+               
+             
+              
+                <input type="text" class="form-control"  placeholder="saisir votre prenom"
+                [(ngModel)]="coach.lastName" name="lastName" >
+
+                <div>
+                  <label style="color: #00D9A5;">Saisir votre date de naisance :</label>
+                </div>
+                <input type="date" class="form-control"  placeholder="saisir votre prenom"
+                [(ngModel)]="coach.dateNaissance" name="DateNaissance" >
+
+
+                <input type="email" class="form-control"  placeholder="saisir votre email"
+                [(ngModel)]="coach.e_mail" name="e_mail" >
+
+
+                <input type="text" class="form-control"  placeholder="saisir votre login"
+                [(ngModel)]="coach.login" name="login" >
+
+
+                <input type="password" class="form-control"  placeholder="saisir votre mot de passe"
+                [(ngModel)]="coach.password" name="password" >
+             
+               
+                <br>
+                <br>
+
+                <input type="submit"  class="fadeIn fourth"  value="S'inscrire">
+                
+         
+                <div class="alert alert-danger" role="alert" *ngIf="error">
+                  {{eroorMessage}}
+               </div>          
+        </form>
+     
+    
+    </div>    
+  </div>  

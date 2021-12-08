@@ -24,4 +24,9 @@ export class CoachService {
 
     return this.http.get(`${this._coachnUrl}`);
 }
+   
+  getPatients() :Observable <any> {
+
+    return this.http.get(`${this._coachnUrl}/patients`);
+}
 }

@@ -21,7 +21,6 @@ export class MedecinService {
 
   getAllMedecins() :Observable <any> {
     
-
     return this.http.get(`${this._medecinUrl}`);
 }
 }

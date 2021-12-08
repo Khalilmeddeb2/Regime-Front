@@ -32,6 +32,12 @@ import { MedecinComponent } from './admin/medecin/medecin.component';
 import { CoachComponent } from './admin/coach/coach.component';
 import { PatientComponent } from './admin/patient/patient.component';
 import { ProfilCoachComponent } from './coach/profil-coach/profil-coach.component';
+import { AjoutCoachComponent } from './admin/ajout-coach/ajout-coach.component';
+import { AjoutMedecinComponent } from './admin/ajout-medecin/ajout-medecin.component';
+import { PatientsComponent } from './coach/patients/patients.component';
+import { DemandeCoachComponent } from './customer/demande-coach/demande-coach.component';
+import { ActiviteComponent } from './coach/activite/activite.component';
+import { AjoutActiviteComponent } from './coach/ajout-activite/ajout-activite.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +66,12 @@ import { ProfilCoachComponent } from './coach/profil-coach/profil-coach.componen
     CoachComponent,
     PatientComponent,
     ProfilCoachComponent,
+    AjoutCoachComponent,
+    AjoutMedecinComponent,
+    PatientsComponent,
+    DemandeCoachComponent,
+    ActiviteComponent,
+    AjoutActiviteComponent,
   ],
   imports: [
     BrowserModule,

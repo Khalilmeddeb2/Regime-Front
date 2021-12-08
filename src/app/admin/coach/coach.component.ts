@@ -9,7 +9,7 @@ import { UserServiceService } from 'src/app/services/user-service.service';
   styleUrls: ['./coach.component.css']
 })
 export class CoachComponent implements OnInit {
-
+  
   coachs: User[] = [];
   constructor(private coachService :CoachService, private userService:UserServiceService) { }
 
@@ -35,5 +35,6 @@ export class CoachComponent implements OnInit {
     })
   
   }
+
 
 }
