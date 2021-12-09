@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AjoutCoachComponent } from './admin/ajout-coach/ajout-coach.component';
 import { AjoutMedecinComponent } from './admin/ajout-medecin/ajout-medecin.component';
@@ -23,7 +23,10 @@ import { DemandeCoachComponent } from './customer/demande-coach/demande-coach.co
 import { ProfilComponent } from './customer/profil/profil.component';
 import { RegisterComponent } from './customer/register/register.component';
 import { RendezVousComponent } from './customer/rendez-vous/rendez-vous.component';
+import { ConfirmRdvComponent } from './medecin/confirm-rdv/confirm-rdv.component';
 import { MedecinHomeComponent } from './medecin/medecin-home/medecin-home.component';
+import { NonValidRdvComponent } from './medecin/non-valid-rdv/non-valid-rdv.component';
+import { ValidRdvComponent } from './medecin/valid-rdv/valid-rdv.component';
 import { ContactMarketing } from './models/contact-marketing';
 import { DemandeCoach } from './models/demande-coach';
 
@@ -46,6 +49,9 @@ const routes: Routes = [
   { path: 'admin-medecins', component: MedecinComponent },
   { path: 'admin-coachs', component: CoachComponent },
   { path: 'admin-patients', component: PatientComponent },
+  { path : 'NonValidRdv',component : NonValidRdvComponent },
+  {path : 'ValidRdv' , component : ValidRdvComponent },
+  {path : 'confirmRdv/:id', component : ConfirmRdvComponent},
   { path: 'admin-ajoutCoach', component: AjoutCoachComponent },
   { path: 'admin-ajoutMedecin', component: AjoutMedecinComponent },
   { path: 'coach-patients', component: PatientsComponent },

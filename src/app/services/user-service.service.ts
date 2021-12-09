@@ -32,6 +32,7 @@ loginUser(user)
   return this.http.post(`${this.loginUrl}`,user);
 }
 
+
 getToken()
 {
   return localStorage.getItem('token')

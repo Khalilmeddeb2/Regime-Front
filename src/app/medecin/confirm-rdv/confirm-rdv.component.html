@@ -1,0 +1,19 @@
+<app-navbar-medecin></app-navbar-medecin>
+
+<div class="col-md-6 offset-md-3">
+  <h3> Confirmation du rendez-vous   </h3>
+  <form (ngSubmit) = "onSubmit()">
+
+      <div class="form-group">
+          <label for="exampleFormControlTextarea1">Note </label>
+          <input class="form-control" id="note" rows="3" 
+          [(ngModel)] = "rdv.note" name = "note">
+        </div>
+      <button class = "btn btn-success" type ="submit">Envoyer</button>
+  
+  </form>
+  </div> 
+
+
+
+<app-footer-medecin></app-footer-medecin>

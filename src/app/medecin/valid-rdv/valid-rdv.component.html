@@ -7,24 +7,27 @@
 <br>
 <br>
 <div class="container-fluid">
-    <h4>Listes des Patients </h4>
+    <h4>Listes des rendez-vous qui sont validés :  </h4>
+    <br>
 
     <section class="content">
         <div class="card">
             <div class="card-header">
             <div  class="panel-body">
-                <table id="tablePatient" class="table table-striped"  cellspacing="0" width="100%">
+                <table id="tableValidRdv" class="table table-striped"  cellspacing="0" width="100%">
                     <thead>
                         <tr>
                         <th>Nom</th>
-                        <th>Prenom</th>
+                        <th>Prénom</th>
                         <th>Email</th>
+                        <th>Date</th>
                         </tr>
                     </thead>
-                    <tr *ngFor="let i of patients">
-                        <td>{{i.firstName}} </td>
-                        <td>{{i.lastName}} </td>
-                        <td>{{i.e_mail}} </td>                        
+                    <tr *ngFor="let i of validRdv">
+                        <td>{{i.patient.firstName}} </td>
+                        <td>{{i.patient.lastName}} </td>
+                        <td>{{i.patient.e_mail}} </td> 
+                        <td>{{ i.date }}</td>                       
                     </tr>
                 </table>
             </div>
