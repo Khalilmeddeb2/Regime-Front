@@ -1,0 +1,73 @@
+<app-sidebar></app-sidebar>
+
+   <br>
+   
+   <div  class="wrapper fadeInDown " >
+       <div id="formContent">
+         <!-- Tabs Titles -->
+         <h2 class="active"> Update medecin </h2>
+         
+        
+           
+      <!-- Contact Form -->
+    
+        <form (ngSubmit) = "onSubmit()" name="Form" class="form" method="post">
+
+            <div>
+                <label style="color: #00D9A5;">First Name :</label>
+              </div>
+          
+                <input type="text" class="form-control"  placeholder="saisir votre nom"
+                [(ngModel)]="medecin.firstName" name="firstName" >
+
+                <div>
+                    <label style="color: #00D9A5;">Last Name :</label>
+                  </div>
+               
+             
+              
+                <input type="text" class="form-control"  placeholder="saisir votre prenom"
+                [(ngModel)]="medecin.lastName" name="lastName" >
+
+
+                <div>
+                    <label style="color: #00D9A5;">Email :</label>
+                  </div>
+
+                
+
+
+                <input type="email" class="form-control"  placeholder="saisir votre email"
+                [(ngModel)]="medecin.e_mail" name="e_mail" >
+
+                <div>
+                    <label style="color: #00D9A5;">Login :</label>
+                  </div>
+
+
+                <input type="text" class="form-control"  placeholder="saisir votre login"
+                [(ngModel)]="medecin.login" name="login" >
+
+                <div>
+                    <label style="color: #00D9A5;">Password :</label>
+                  </div>
+
+
+                <input type="password" class="form-control"  placeholder="saisir votre mot de passe"
+                [(ngModel)]="medecin.password" name="password" >
+             
+               
+                <br>
+                <br>
+
+                <input type="submit"  class="fadeIn fourth"  value="Update">
+                
+         
+                <div class="alert alert-danger" role="alert" *ngIf="error">
+                  {{eroorMessage}}
+               </div>          
+        </form>
+     
+    
+    </div>    
+  </div>  
