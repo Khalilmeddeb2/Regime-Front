@@ -8,6 +8,7 @@ import { DashbordComponent } from './admin/dashbord/dashbord.component';
 import { MedecinComponent } from './admin/medecin/medecin.component';
 import { PatientComponent } from './admin/patient/patient.component';
 import { SidebarComponent } from './admin/sidebar/sidebar.component';
+import { UpdateMedecinComponent } from './admin/update-medecin/update-medecin.component';
 import { ActiviteComponent } from './coach/activite/activite.component';
 import { AjoutActiviteComponent } from './coach/ajout-activite/ajout-activite.component';
 import { ExerciceComponent } from './coach/exercice/exercice.component';
@@ -58,6 +59,7 @@ const routes: Routes = [
   { path: 'demande-coach', component: DemandeCoachComponent },
   { path: 'listesActivites', component: ActiviteComponent },
   { path: 'ajoutActivite', component: AjoutActiviteComponent },
+  { path : 'update-medecin/:id', component : UpdateMedecinComponent}
 
   
   

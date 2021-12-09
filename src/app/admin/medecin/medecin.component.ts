@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { User } from 'src/app/models/user';
 import { MedecinService } from 'src/app/services/medecin.service';
 import { UserServiceService } from 'src/app/services/user-service.service';
@@ -11,7 +12,7 @@ import { UserServiceService } from 'src/app/services/user-service.service';
 export class MedecinComponent implements OnInit {
 
   medecins: User[] = [];
-  constructor(private medecinService :MedecinService,private userService:UserServiceService) { }
+  constructor(private medecinService :MedecinService,private userService:UserServiceService, private router : Router) { }
 
   ngOnInit(): void {
     this.getMedecins();
@@ -36,6 +37,11 @@ this.userService.deleteUser(user._id).subscribe(e=>
     this.getMedecins();
   })
 
+}
+
+updateMedecin(id : string)
+{
+  this.router.navigate(['update-medecin',id]);
 }
 
 

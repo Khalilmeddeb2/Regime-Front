@@ -25,6 +25,15 @@ export class MedecinService {
     return this.http.post(`${this._medecinUrl}`,medecin);
   }
 
+  updateMedecin(id : string, medecin : User):Observable<Object> {
+    return this.http.put(`${this._medecinUrl}/${id}`,medecin);
+  }
+
+  getMedecinById(id : string):Observable<User>
+  {
+    return this.http.get<User>(`${this._medecinUrl}/${id}`);
+  }
+
   getAllMedecins() :Observable <any> {
     
     return this.http.get(`${this._medecinUrl}`);
@@ -43,7 +52,6 @@ export class MedecinService {
 }
 
 
-  
 
 
 }

@@ -43,6 +43,7 @@ import { PatientsComponent } from './coach/patients/patients.component';
 import { DemandeCoachComponent } from './customer/demande-coach/demande-coach.component';
 import { ActiviteComponent } from './coach/activite/activite.component';
 import { AjoutActiviteComponent } from './coach/ajout-activite/ajout-activite.component';
+import { UpdateMedecinComponent } from './admin/update-medecin/update-medecin.component';
 
 @NgModule({
   declarations: [
@@ -82,6 +83,7 @@ import { AjoutActiviteComponent } from './coach/ajout-activite/ajout-activite.co
     DemandeCoachComponent,
     ActiviteComponent,
     AjoutActiviteComponent,
+    UpdateMedecinComponent,
   ],
   imports: [
     BrowserModule,

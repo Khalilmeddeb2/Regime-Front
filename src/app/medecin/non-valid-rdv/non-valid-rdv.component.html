@@ -8,13 +8,19 @@
 <br>
 <br>
 <div class="container-fluid">
-    <h4>Listes des rendez-vous qui sont validés :  </h4>
     <br>
 
     <section class="content">
-        <div class="card">
-            <div class="card-header">
-            <div  class="panel-body">
+        <div class="main-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header card-header-danger">
+                                <h4>Listes des rendez-vous qui sont validés :  </h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
                 <table id="tableNonValidRdv" class="table table-striped"  cellspacing="0" width="100%">
                     <thead >
                         <tr>
@@ -31,13 +37,18 @@
                         <td>{{ i.patient.e_mail }} </td> 
                         <td>{{ i.date }}</td>    
                         <td>
-                            <button type="button" class="btn btn-secondary" (click)="confirmRdv(i._id)" title="Confirm">Confimer</button>
+                            <button type="button" class="btn btn-primary mt-3 wow zoomIn" (click)="confirmRdv(i._id)" title="Confirm">Confimer</button>
                         </td>                   
                     </tr>
                 </table>
             </div>
             </div>
         </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    
     </section>
 </div>
                     
